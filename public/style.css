@@ -1,0 +1,165 @@
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right {
+    flex: 0.2
+}
+
+.main__videos {
+    flex-grow: 1;
+    /* background-color:rgb(71, 69, 69); */
+    background-color: #242324;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.main__controls {
+    background-color: rgb(71, 69, 69);
+}
+
+.main__right {
+    background-color: rgb(71, 69, 69);
+    border-left: 1px solid #3D3D42;
+}
+
+.main__controls {
+    color: rgb(177, 115, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.main_controls_block {
+    
+    display: flex;
+}
+
+.main_controls_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main_controls_button:hover {
+    
+    border-radius: 5px;
+}
+
+.main_controls_button i {
+    font-size: 24px;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    color: orange;
+}
+
+.main__header {
+    padding-top: 5px;
+   
+    text-align: center;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.messages{
+    color: orange;
+    list-style: none;
+}
+
+.main__message_container {
+    padding: 22px 12px;
+    display: flex;
+    color: white;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: orange;
+}
+
+.leave_meeting {
+    color: #EB534B;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+}
+::placeholder{
+    color: orange;
+}
+
+
+
+
+
+.gradient-border {
+    --borderWidth: 3px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border ::after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    /* z-index: 1; */
+    -webkit-animation: animatedgradient 3s ease alternate infinite;
+            animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @-webkit-keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  
